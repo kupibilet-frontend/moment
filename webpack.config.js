@@ -42,7 +42,7 @@ module.exports = {
   output,
 
   entry: {
-    moment: path.resolve(__dirname, 'src'),
+    index: path.resolve(__dirname, 'src'),
   },
 
   resolve,
