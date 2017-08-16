@@ -4,8 +4,10 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "NODE_ENV=production webpack",
+    "test": "jest --bail --no-cache",
     "prepublish": "in-publish && yarn run build --silent || not-in-publish",
-    "test": "jest --bail --no-cache"
+    "preversion": "yarn run test --silent",
+    "postversion": "git push --follow-tags"
   },
   "repository": {
     "type": "git",
