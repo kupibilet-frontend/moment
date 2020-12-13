@@ -1,5 +1,6 @@
 const moment = require('moment')
 require('moment/locale/ru')
+require('moment/locale/nl')
 
 const monthsNames = ['янв', 'фев', 'мар', 'апр', 'мая', 'июн', 'июл', 'авг', 'сен', 'окт', 'ноя', 'дек']
 
